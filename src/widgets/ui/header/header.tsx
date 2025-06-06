@@ -1,0 +1,66 @@
+import "./header.scss";
+import { LogoImage } from "@/shared/assets/images";
+
+export const Header = () => {
+  return (
+    <header className="header">
+      <div className="header__information container">
+        <div className="header__information-logo">
+          <img
+            className="header__information-logo__image"
+            src={LogoImage}
+            alt=""
+            width="37"
+            height="44"
+            loading="lazy"
+          />
+          <div className="header__information-logo__description">
+            Университетский <br /> экономико-технологический <br /> колледж
+          </div>
+        </div>
+        <div className="header__information-access">
+          <div className="header__information-access__address">
+            г. Сочи, ул. Чайковского, 45
+          </div>
+          <div className="header__information-access__contacts">
+            <a
+              href="tel:8(862)254-47-43"
+              className="header__information-access__contacts-link"
+            >
+              8 (862) 254-47-43
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div className="header__navigation container">
+        <nav className="header__navigation-menu">
+          <ul className="header__navigation-menu__list">
+            <li className="header__navigation-menu__item">
+              <a href="#programs" className="header__navigation-menu__link">
+                Образовательные программы
+              </a>
+            </li>
+            <li className="header__navigation-menu__item">
+              <a href="#teachers" className="header__navigation-menu__link">
+                Наши преподаватели
+              </a>
+            </li>
+            <li className="header__navigation-menu__item">
+              <a href="#for" className="header__navigation-menu__link">
+                Для кого обучение
+              </a>
+            </li>
+            <li className="header__navigation-menu__item">
+              <a href="#graduates" className="header__navigation-menu__link">
+                Наши выпускники
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  );
+};
