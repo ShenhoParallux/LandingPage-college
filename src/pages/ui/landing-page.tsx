@@ -1,9 +1,10 @@
-import { Header } from "@/widgets/ui";
+import { Banner, Header } from "@/widgets/ui";
 
 export const LandingPage = () => {
   return (
     <>
       <Header />
+      <Banner />
     </>
   );
 };

@@ -1,5 +1,6 @@
 import "./header.scss";
 import { LogoImage } from "@/shared/assets/images";
+import { BurgerButton } from "@/shared/ui";
 
 export const Header = () => {
   return (
@@ -18,7 +19,7 @@ export const Header = () => {
             Университетский <br /> экономико-технологический <br /> колледж
           </div>
         </div>
-        <div className="header__information-access">
+        <div className="header__information-access hidden-mobile">
           <div className="header__information-access__address">
             г. Сочи, ул. Чайковского, 45
           </div>
@@ -31,12 +32,13 @@ export const Header = () => {
             </a>
           </div>
         </div>
+        <BurgerButton />
       </div>
 
       <hr />
 
       <div className="header__navigation container">
-        <nav className="header__navigation-menu">
+        <nav className="header__navigation-menu hidden-mobile">
           <ul className="header__navigation-menu__list">
             <li className="header__navigation-menu__item">
               <a href="#programs" className="header__navigation-menu__link">

@@ -1,0 +1,14 @@
+@use '/src/shared/styles/helpers' as *;
+
+.header__navigation-burger {
+	@include flex();
+	background: none;
+	border: none;
+	padding: 0;
+
+	&__image {
+		@include square(40px);
+
+		display: block;
+	}
+}

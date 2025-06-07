@@ -1,9 +1,13 @@
 @use '/src/shared/styles/helpers' as *;
 
 .header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 	color: var(--color-light);
+	background-color: transparent;
 	padding-block: 10px;
-	border: 1px solid red; // УБРАТЬ
 
 	&__information {
 		@include flex(flex, space-between, center);
@@ -26,8 +30,12 @@
 		&-access {
 			@include flex();
 
-			column-gap: 56px;
-			font-size: 16px;
+			column-gap: #{rem(56)};
+			font-size: #{rem(16)};
+
+			@include tablet {
+				column-gap: #{rem(20)};
+			}
 
 			&__contacts {
 				&-link {
@@ -41,6 +49,8 @@
 		&-menu {
 			&__list {
 				@include flex(flex, space-between, center);
+
+				column-gap: #{rem(30)};
 			}
 
 			&__item {
@@ -53,6 +63,10 @@
 
 				position: relative;
 				height: #{rem(30)};
+
+				@include tablet {
+					height: auto;
+				}
 
 				&:after {
 					position: absolute;
