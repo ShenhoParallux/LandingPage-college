@@ -4,7 +4,7 @@ import { BurgerButton } from "@/shared/ui";
 
 export const Header = () => {
   return (
-    <header className="header">
+    <header className="header" id="header">
       <div className="header__information container">
         <div className="header__information-logo">
           <img
@@ -26,6 +26,7 @@ export const Header = () => {
           <div className="header__information-access__contacts">
             <a
               href="tel:8(862)254-47-43"
+              title="Позвонить по номеру телефона"
               className="header__information-access__contacts-link"
             >
               8 (862) 254-47-43

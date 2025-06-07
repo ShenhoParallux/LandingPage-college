@@ -20,8 +20,11 @@
 	--font-size-22: #{rem(22)};
 
 	--border: 1px solid var(--color-grey-alternate);
+	--border-radius-8: 8px;
 
-	--button-height: #{rem(32)};
+	--button-height-link: #{rem(72)};
+	--button-height-callback: #{rem(55)};
+	--button-padding-x: min(32px, 16px);
 
 	--container-width: #{rem(1420)};
 	--container-padding-x: #{rem(16)};
