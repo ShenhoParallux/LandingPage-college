@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <header className="header" id="header">
       <div className="header__information container">
-        <div className="header__information-logo">
+        <a href="#header" className="header__information-logo">
           <img
             className="header__information-logo__image"
             src={LogoImage}
@@ -18,7 +18,7 @@ export const Header = () => {
           <div className="header__information-logo__description">
             Университетский <br /> экономико-технологический <br /> колледж
           </div>
-        </div>
+        </a>
         <div className="header__information-access hidden-mobile">
           <div className="header__information-access__address">
             г. Сочи, ул. Чайковского, 45
