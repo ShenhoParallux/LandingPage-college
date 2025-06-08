@@ -11,8 +11,8 @@ export const BurgerButton = () => {
         className="header__navigation-burger__image"
         src={BurgerImage}
         alt="Burger menu image"
-        width="24"
-        height="24"
+        width="40"
+        height="40"
         loading="lazy"
       />
     </button>
