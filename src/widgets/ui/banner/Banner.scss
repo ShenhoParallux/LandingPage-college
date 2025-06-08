@@ -37,10 +37,18 @@
 			font-size: clamp(24px, 3.24vw, 46px);
 			text-align: center;
 			font-weight: 300;
-			max-width: 870px;
+			max-width: 850px;
+
+			@include tablet {
+				max-width: 610px;
+			}
+
+			@include mobile {
+				max-width: 450px;
+			}
 
 			@include mobile-s {
-				max-width: 350px;
+				max-width: 330px;
 			}
 		}
 	}
