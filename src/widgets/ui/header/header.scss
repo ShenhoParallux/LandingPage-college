@@ -1,92 +1,92 @@
-@use '/src/shared/styles/helpers' as *;
+@use "/src/shared/styles/helpers" as *;
 
 .header {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	color: var(--color-light);
-	background-color: transparent;
-	padding-block: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: var(--color-light);
+  background-color: transparent;
+  padding-block: 10px;
 
-	&__information {
-		@include flex(flex, space-between, center);
+  &__information {
+    @include flex(flex, space-between, center);
 
-		&-logo {
-			@include flex();
+    &-logo {
+      @include flex();
 
-			column-gap: #{rem(16)};
+      column-gap: #{rem(16)};
 
-			&__image {
-				width: #{rem(37)};
-				height: #{rem(44)};
-			}
+      &__image {
+        width: #{rem(37)};
+        height: #{rem(44)};
+      }
 
-			&__description {
-				font-size: var(--font-size-14);
-			}
-		}
+      &__description {
+        font-size: var(--font-size-14);
+      }
+    }
 
-		&-access {
-			@include flex();
+    &-access {
+      @include flex();
 
-			column-gap: #{rem(56)};
-			font-size: #{rem(16)};
+      column-gap: #{rem(56)};
+      font-size: #{rem(16)};
 
-			@include tablet {
-				column-gap: #{rem(20)};
-			}
+      @include tablet {
+        column-gap: #{rem(20)};
+      }
 
-			&__contacts {
-				&-link {
-					@include reset-link;
-				}
-			}
-		}
-	}
+      &__contacts {
+        &-link {
+          @include reset-link;
+        }
+      }
+    }
+  }
 
-	&__navigation {
-		&-menu {
-			&__list {
-				@include flex(flex, space-between, center);
+  &__navigation {
+    &-menu {
+      &__list {
+        @include flex(flex, space-between, center);
 
-				column-gap: #{rem(30)};
-			}
+        column-gap: #{rem(30)};
+      }
 
-			&__item {
-				@include flex();
-			}
+      &__item {
+        @include flex();
+      }
 
-			&__link {
-				@include reset-link;
-				@include flex(inline-flex);
+      &__link {
+        @include reset-link;
+        @include flex(inline-flex);
 
-				position: relative;
-				height: #{rem(30)};
+        position: relative;
+        height: #{rem(30)};
 
-				@include tablet {
-					height: auto;
-				}
+        @include tablet {
+          height: auto;
+        }
 
-				&:after {
-					position: absolute;
-					content: '';
-					top: 100%;
-					left: 50%;
-					translate: -50% -50%;
-					width: 0;
-					height: 1px;
-					background-color: var(--color-light);
-					transition: var(--transition-duration);
-				}
+        &:after {
+          position: absolute;
+          content: "";
+          top: 100%;
+          left: 50%;
+          translate: -50% -50%;
+          width: 0;
+          height: 1px;
+          background-color: var(--color-light);
+          transition: var(--transition-duration);
+        }
 
-				@include hover {
-					&:after {
-						width: 100%;
-						transition: var(--transition-duration);
-					}
-				}
-			}
-		}
-	}
+        @include hover {
+          &:after {
+            width: 100%;
+            transition: var(--transition-duration);
+          }
+        }
+      }
+    }
+  }
 }

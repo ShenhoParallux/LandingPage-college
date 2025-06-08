@@ -1,25 +1,25 @@
-@use '/src/shared/styles/helpers' as *;
+@use "/src/shared/styles/helpers" as *;
 
 .button {
-	background-color: var(--color-blue);
-	padding-inline: var(--button-padding-x);
-	font-size: var(--font-size-18);
-	border-radius: var(--border-radius-8);
+  background-color: var(--color-blue);
+  padding-inline: var(--button-padding-x);
+  font-size: var(--font-size-18);
+  border-radius: var(--border-radius-8);
 
-	&__link {
-		@include flex(inline-flex, center, center);
-		@include reset-link;
-		padding-block: 24px;
-		column-gap: 10px;
+  &__link {
+    @include flex(inline-flex, center, center);
+    @include reset-link;
+    padding-block: 24px;
+    column-gap: 10px;
 
-		height: var(--button-height-link);
+    height: var(--button-height-link);
 
-		&-icon {
-			@include square(24px);
-		}
+    &-icon {
+      @include square(24px);
+    }
 
-		&-description {
-			font-weight: 600;
-		}
-	}
+    &-description {
+      font-weight: 600;
+    }
+  }
 }

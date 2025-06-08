@@ -1,39 +1,39 @@
-@use 'helpers' as *;
+@use "helpers" as *;
 
 :root {
-	--color-light: #ffffff;
-	--color-dark: #0F0E10;
-	--color-dark-alternate: #171717;
-	--color-blue: #093092;
-	--color-blue-alternate: #1279BE;
-	--color-grey: #4F505B;
-	--color-grey-alternate: #F3F6FD;
+  --color-light: #ffffff;
+  --color-dark: #0f0e10;
+  --color-dark-alternate: #171717;
+  --color-blue: #093092;
+  --color-blue-alternate: #1279be;
+  --color-grey: #4f505b;
+  --color-grey-alternate: #f3f6fd;
 
-	--font-family: 'Montserrat', sans-serif;
-	--font-size-18: #{rem(18)};
-	--font-size-16: #{rem(16)};
-	--font-size-14: #{rem(14)};
-	--font-size-110: #{rem(110)};
-	--font-size-30: #{rem(30)};
-	--font-size-46: #{rem(46)};
-	--font-size-56: #{rem(56)};
-	--font-size-22: #{rem(22)};
+  --font-family: "Montserrat", sans-serif;
+  --font-size-18: #{rem(18)};
+  --font-size-16: #{rem(16)};
+  --font-size-14: #{rem(14)};
+  --font-size-110: #{rem(110)};
+  --font-size-30: #{rem(30)};
+  --font-size-46: #{rem(46)};
+  --font-size-56: #{rem(56)};
+  --font-size-22: #{rem(22)};
 
-	--border: 1px solid var(--color-grey-alternate);
-	--border-radius-8: 8px;
+  --border: 1px solid var(--color-grey-alternate);
+  --border-radius-8: 8px;
 
-	--button-height-link: 72px;
-	--button-height-callback: 55px;
-	--button-padding-x: 32px;
+  --button-height-link: 72px;
+  --button-height-callback: 55px;
+  --button-padding-x: 32px;
 
-	--container-width: #{rem(1420)};
-	--container-padding-x: #{rem(16)};
+  --container-width: #{rem(1420)};
+  --container-padding-x: #{rem(16)};
 
-	--section-padding-y: 60px;
+  --section-padding-y: 60px;
 
-	--transition-duration: 0.2s;
+  --transition-duration: 0.2s;
 
-	@include tablet {
-		--section-padding-y: 30px;
-	}
+  @include tablet {
+    --section-padding-y: 30px;
+  }
 }

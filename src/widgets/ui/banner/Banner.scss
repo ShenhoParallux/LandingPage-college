@@ -1,55 +1,56 @@
-@use '/src/shared/styles/helpers' as *;
+@use "/src/shared/styles/helpers" as *;
 
 .banner {
-	@include flex(flex, space-between, center);
+  @include flex(flex, space-between, center);
 
-	flex-direction: column;
-	width: 100%;
-	height: 100vh;
-	color: var(--color-light);
-	background: url(src/shared/assets/images/banner/background-banner.jpg) center/cover no-repeat;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  color: var(--color-light);
+  background: url(src/shared/assets/images/banner/background-banner.jpg)
+    center/cover no-repeat;
 
-	@include mobile {
-		@include flex(flex, end, center);
-		background-position: 30% center;
-	}
+  @include mobile {
+    @include flex(flex, end, center);
+    background-position: 30% center;
+  }
 
-	&__title {
-		font-size: clamp(30px, 7.746vw, 110px);
-		margin-top: 115px;
+  &__title {
+    font-size: clamp(30px, 7.746vw, 110px);
+    margin-top: 115px;
 
-		@include tablet {
-			margin-top: 150px;
-		}
+    @include tablet {
+      margin-top: 150px;
+    }
 
-		@include mobile {
-			font-weight: 400;
-		}
-	}
+    @include mobile {
+      font-weight: 400;
+    }
+  }
 
-	&__main {
-		@include flex();
-		flex-direction: column;
-		row-gap: 24px;
-		margin-bottom: 40px;
+  &__main {
+    @include flex();
+    flex-direction: column;
+    row-gap: 24px;
+    margin-bottom: 40px;
 
-		&-description {
-			font-size: clamp(24px, 3.24vw, 46px);
-			text-align: center;
-			font-weight: 300;
-			max-width: 850px;
+    &-description {
+      font-size: clamp(24px, 3.24vw, 46px);
+      text-align: center;
+      font-weight: 300;
+      max-width: 850px;
 
-			@include tablet {
-				max-width: 610px;
-			}
+      @include tablet {
+        max-width: 610px;
+      }
 
-			@include mobile {
-				max-width: 450px;
-			}
+      @include mobile {
+        max-width: 450px;
+      }
 
-			@include mobile-s {
-				max-width: 330px;
-			}
-		}
-	}
+      @include mobile-s {
+        max-width: 330px;
+      }
+    }
+  }
 }
