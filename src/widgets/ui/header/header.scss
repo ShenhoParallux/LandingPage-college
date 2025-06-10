@@ -21,10 +21,12 @@
       &__image {
         width: #{rem(37)};
         height: #{rem(44)};
+        z-index: 100;
       }
 
       &__description {
         font-size: var(--font-size-14);
+        z-index: 100;
       }
     }
 

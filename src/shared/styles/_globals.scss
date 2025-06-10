@@ -21,6 +21,8 @@ hr {
   border: var(--border);
   opacity: 0.5;
   margin-block: 10px;
+  position: relative;
+  z-index: 100;
 }
 
 h1 {
