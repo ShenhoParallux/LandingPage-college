@@ -1,0 +1,19 @@
+@use "/src/shared/styles/helpers" as *;
+
+.card {
+	@include flex(inline-flex);
+	height: 49px;
+	padding-inline: 16px;
+	background-color: var(--color-blue-alternate);
+	border-radius: var(--border-radius-8);
+	color: var(--color-light);
+
+	@include mobile {
+		padding: 4px 8px;
+		height: auto;
+	}
+
+	&__content {
+		text-align: center;
+	}
+}

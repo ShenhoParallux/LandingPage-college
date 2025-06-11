@@ -1,0 +1,101 @@
+@use "/src/shared/styles/helpers" as *;
+
+.programs {
+	@include flex(flex, center, center);
+	flex-direction: column;
+	row-gap: 64px;
+	padding-block: var(--section-padding-y);
+
+	@include tablet {
+		row-gap: 32px;
+	}
+
+	&__title {
+		font-size: clamp(1.7rem, 4.492vw, 2.875rem);
+		font-weight: 300;
+	}
+
+	&__card {
+		&-list {
+			@include flex(flex, center, start);
+			flex-direction: column;
+			row-gap: 24px;
+		}
+
+		&-item {
+			@include flex(flex, start, center);
+			position: relative;
+			column-gap: 100px;
+			padding: 40px;
+			width: 100%;
+			background-color: var(--color-grey-alternate);
+
+			@include tablet {
+				padding: 20px;
+			}
+
+			&__main {
+				@include flex(flex, center, start);
+				flex-direction: column;
+				row-gap: 24px;
+
+				&-title {
+					font-size: clamp(1.875rem, 3.94vw, 3.5rem);
+					font-weight: 300;
+				}
+
+				&-tags {
+					@include flex;
+					column-gap: 16px;
+				}
+
+				&-description {
+					@include flex(flex, center, start);
+					flex-direction: column;
+					row-gap: 8px;
+					max-width: 70%;
+
+					&__title {
+						font-size: var(--font-size-22);
+						font-weight: 500;
+					}
+
+					&__main {
+						&-list {
+							@include flex(flex, center, start);
+							flex-direction: column;
+							row-gap: 8px;
+						}
+
+						&-item {
+							list-style: disc inside;
+						}
+					}
+				}
+			}
+
+			&__description {
+				width: 40%;
+				&-image {
+					position: absolute;
+					bottom: 0;
+					right: 13%;
+
+					width: auto;
+					height: 480px;
+				}
+
+				&-text {
+					position: absolute;
+					background-color: var(--color-light);
+					width: 50%;
+					right: 40px;
+					bottom: 40px;
+					padding: 16px;
+					border-radius: var(--border-radius-8);
+					text-align: center;
+				}
+			}
+		}
+	}
+}
