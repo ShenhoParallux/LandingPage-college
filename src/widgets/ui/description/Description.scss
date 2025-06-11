@@ -34,6 +34,7 @@
 	&__image {
 		width: 49vw;
 		height: auto;
+		border-radius: var(--border-radius-8);
 
 		@include tablet {
 			width: max(68vw, 450px);
