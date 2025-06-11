@@ -4,6 +4,7 @@ import BannerBackgroundImage from "./banner/background-banner.jpg";
 import ButtonIcon from "./callback-icon/icon.svg";
 import LocateIcon from "./burger/locate.svg";
 import PhoneIcon from "./burger/phone.svg";
+import DescriptionImage from "./description/image.jpg";
 
 export {
   LogoImage,
@@ -12,4 +13,5 @@ export {
   ButtonIcon,
   LocateIcon,
   PhoneIcon,
+  DescriptionImage,
 };

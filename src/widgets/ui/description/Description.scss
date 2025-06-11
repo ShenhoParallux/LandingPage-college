@@ -1,0 +1,42 @@
+@use "/src/shared/styles/helpers/index" as *;
+
+.description {
+	@include flex(flex, space-between, center);
+	column-gap: 24px;
+	padding-block: var(--section-padding-y);
+
+	@include tablet {
+		flex-direction: column;
+		row-gap: 24px;
+	}
+
+	&__main {
+		@include flex(flex, center, center);
+		flex-direction: column;
+		row-gap: 24px;
+
+		&-title {
+			font-size: clamp(1.375rem, 2.929vw, 1.875rem);
+
+			@include tablet {
+				text-align: center;
+				font-weight: 500;
+			}
+		}
+
+		&-description {
+			@include flex;
+			flex-direction: column;
+			row-gap: 12px;
+		}
+	}
+
+	&__image {
+		width: 49vw;
+		height: auto;
+
+		@include tablet {
+			width: max(68vw, 450px);
+		}
+	}
+}
