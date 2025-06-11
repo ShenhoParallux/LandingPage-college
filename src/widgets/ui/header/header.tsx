@@ -20,9 +20,13 @@ export const Header = () => {
           </div>
         </a>
         <div className="header__information-access hidden-mobile">
-          <div className="header__information-access__address">
+          <a
+            href="https://yandex.eu/maps/-/CHSW6ZZ8"
+            target="_blank"
+            className="header__information-access__address"
+          >
             г. Сочи, ул. Чайковского, 45
-          </div>
+          </a>
           <div className="header__information-access__contacts">
             <a
               href="tel:8(862)254-47-43"

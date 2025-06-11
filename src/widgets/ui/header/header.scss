@@ -40,6 +40,10 @@
         column-gap: #{rem(20)};
       }
 
+      &__address {
+        @include reset-link;
+      }
+
       &__contacts {
         &-link {
           @include reset-link;

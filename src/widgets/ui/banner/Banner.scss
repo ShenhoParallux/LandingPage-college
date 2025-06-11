@@ -7,7 +7,7 @@
   width: 100%;
   height: 100vh;
   color: var(--color-light);
-  background: url(src/shared/assets/images/banner/background-banner.jpg)
+  background: url(/src/shared/assets/images/banner/background-banner.jpg)
     center/cover no-repeat;
 
   @include mobile {
