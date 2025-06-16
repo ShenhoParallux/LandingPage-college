@@ -1,6 +1,15 @@
-import { RouterProvider } from "react-router-dom";
-import { router } from "@/app/router";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Layout } from "@/shared/ui/layout";
+import { LandingPage } from "@/pages";
 
 export const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <BrowserRouter basename="/LandingPage-college/">
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<LandingPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 };
