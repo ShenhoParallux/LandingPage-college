@@ -1,0 +1,52 @@
+@use '/src/shared/styles/helpers' as *;
+
+#cardlist-toggle {
+	display: none;
+}
+
+.cardlist {
+	@include flex(flex, start, start);
+
+	position: relative;
+	flex-direction: column;
+	width: 100%;
+	background-color: var(--color-light);
+	padding: 8px 16px;
+	transition: var(--transition-duration);
+	border-radius: var(--border-radius-8) var(--border-radius-8) 0 0;
+
+	&__label {
+		@include flex(flex, space-between, center);
+		width: 100%;
+	}
+
+	&__wrap {
+		position: absolute;
+		left: 0;
+		top: 100%;
+		overflow-y: scroll;
+		height: 0;
+		max-height: 300px;
+		width: 100%;
+		transition: var(--transition-duration);
+		z-index: 50;
+		background-color: var(--color-light);
+		border-radius: 0 0 var(--border-radius-8) var(--border-radius-8);
+		padding-inline: 16px;
+
+		&::-webkit-scrollbar-thumb {
+			background-color: var(--color-blue-alternate);
+			border-radius: var(--border-radius-8);
+		}
+	}
+
+	&__label--opened {
+		& ~ .cardlist__wrap {
+			height: auto;
+			padding-block: 8px;
+		}
+		.cardlist__label-arrow {
+			rotate: (180deg);
+		}
+	}
+}

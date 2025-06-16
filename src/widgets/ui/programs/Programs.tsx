@@ -1,6 +1,7 @@
 import "./Programs.scss";
 import {
   CallbackButton,
+  CardList,
   CardTag,
   Programs1Image,
   Programs2Image,
@@ -24,7 +25,7 @@ export const Programs = () => {
                 <CardTag content={"На базе 9 классов"} />
                 <CardTag content={"3 года 10 месяцев"} />
               </div>
-              <div className="programs__card-item__main-description">
+              <div className="programs__card-item__main-description hidden-mobile">
                 <div className="programs__card-item__main-description__title">
                   Что входит?
                 </div>
@@ -45,6 +46,22 @@ export const Programs = () => {
                   </ul>
                 </div>
               </div>
+              <CardList title={"Что входит?"}>
+                <ul className="programs__card-item__main-description__main-list">
+                  <li className="programs__card-item__main-description__main-item">
+                    Фундаментальные знания и навыки
+                  </li>
+                  <li className="programs__card-item__main-description__main-item">
+                    Кулинарные техники и технологии
+                  </li>
+                  <li className="programs__card-item__main-description__main-item">
+                    Специализированные направления
+                  </li>
+                  <li className="programs__card-item__main-description__main-item">
+                    Управления и организация производства
+                  </li>
+                </ul>
+              </CardList>
             </div>
             <div className="programs__card-item__description">
               <img
@@ -70,7 +87,7 @@ export const Programs = () => {
                 <CardTag content={"Очная / Вечерняя / Интенсивные курсы"} />
                 <CardTag content={"От 3 до 6 месяцев"} />
               </div>
-              <div className="programs__card-item__main-description">
+              <div className="programs__card-item__main-description hidden-mobile">
                 <div className="programs__card-item__main-description__title">
                   Что входит?
                 </div>
@@ -80,7 +97,7 @@ export const Programs = () => {
                       Быстрый вход в профессию для смены карьеры
                     </li>
                     <li className="programs__card-item__main-description__main-item">
-                      Углубленное изучение кулинарии или кондитерского дела
+                      Углублённое изучение кулинарии или кондитерского дела
                     </li>
                     <li className="programs__card-item__main-description__main-item">
                       Диплом о профессиональной переподготовке
@@ -88,6 +105,19 @@ export const Programs = () => {
                   </ul>
                 </div>
               </div>
+              <CardList title={"Что входит?"}>
+                <ul className="programs__card-item__main-description__main-list">
+                  <li className="programs__card-item__main-description__main-item">
+                    Быстрый вход в профессию для смены карьеры
+                  </li>
+                  <li className="programs__card-item__main-description__main-item">
+                    Углублённое изучение кулинарии или кондитерского дела
+                  </li>
+                  <li className="programs__card-item__main-description__main-item">
+                    Диплом о профессиональной переподготовке
+                  </li>
+                </ul>
+              </CardList>
             </div>
             <div className="programs__card-item__description">
               <img
@@ -112,37 +142,61 @@ export const Programs = () => {
               <div className="programs__card-item__main-tags">
                 <CardTag content={"Краткосрочные курсы (от 2 недель)"} />
               </div>
-              <div className="programs__card-item__main-description">
+              <div className="programs__card-item__main-description hidden-mobile">
                 <div className="programs__card-item__main-description__title">
                   Направления
                 </div>
                 <div className="programs__card-item__main-description__main">
                   <ul className="programs__card-item__main-description__main-list">
                     <li className="programs__card-item__main-description__main-item">
-                      Органическая гастрокультура: для тех, кто заботится о
-                      здоровье
+                      Органическая гастрокультура: для заботящихся о здоровье
                     </li>
                     <li className="programs__card-item__main-description__main-item">
                       Растительная кухня (Plant-Based): вегетарианские блюда,
                       альтернативные белки (тофу, темпе, сейтан, грибы, бобовые)
                     </li>
                     <li className="programs__card-item__main-description__main-item">
-                      Концепции "Farm-to-Table" (От фермы до стола), "Zero
+                      Концепции: "Farm-to-Table" (От фермы до стола), "Zero
                       Waste" (Безотходное производство)
                     </li>
                     <li className="programs__card-item__main-description__main-item">
-                      Научные принципы в создании новых текстур и форм
+                      Научные принципы в создании текстур и форм
                     </li>
                     <li className="programs__card-item__main-description__main-item">
                       Оптимизация процессов и улучшение качества
                     </li>
                     <li className="programs__card-item__main-description__main-item">
-                      HACCP и пищевая безопасность: Актуализация знаний по
-                      санитарным нормам и контролю качества.
+                      HACCP и пищевая безопасность: актуализация знаний по
+                      саннормам и контролю качества
                     </li>
                   </ul>
                 </div>
               </div>
+              <CardList title={"Направления"}>
+                <ul className="programs__card-item__main-description__main-list">
+                  <li className="programs__card-item__main-description__main-item">
+                    Органическая гастрокультура: для заботящихся о здоровье
+                  </li>
+                  <li className="programs__card-item__main-description__main-item">
+                    Растительная кухня (Plant-Based): вегетарианские блюда,
+                    альтернативные белки (тофу, темпе, сейтан, грибы, бобовые)
+                  </li>
+                  <li className="programs__card-item__main-description__main-item">
+                    Концепции: "Farm-to-Table" (От фермы до стола), "Zero Waste"
+                    (Безотходное производство)
+                  </li>
+                  <li className="programs__card-item__main-description__main-item">
+                    Научные принципы в создании текстур и форм
+                  </li>
+                  <li className="programs__card-item__main-description__main-item">
+                    Оптимизация процессов и улучшение качества
+                  </li>
+                  <li className="programs__card-item__main-description__main-item">
+                    HACCP и пищевая безопасность: актуализация знаний по
+                    саннормам и контролю качества
+                  </li>
+                </ul>
+              </CardList>
             </div>
             <div className="programs__card-item__description">
               <img
@@ -162,12 +216,12 @@ export const Programs = () => {
           <li className="programs__card-item">
             <div className="programs__card-item__main">
               <h3 className="programs__card-item__main-title">
-                Программы дополнительного образования для детей и взрослых
+                Повышение квалификации
               </h3>
               <div className="programs__card-item__main-tags">
                 <CardTag content={"Мастер-классы, кулинарные тимбилдинги"} />
               </div>
-              <div className="programs__card-item__main-description">
+              <div className="programs__card-item__main-description hidden-mobile">
                 <div className="programs__card-item__main-description__title">
                   Формат
                 </div>
@@ -185,6 +239,19 @@ export const Programs = () => {
                   </ul>
                 </div>
               </div>
+              <CardList title={"Формат"}>
+                <ul className="programs__card-item__main-description__main-list">
+                  <li className="programs__card-item__main-description__main-item">
+                    Разовые мастер-классы (паста, суши, авторские десерты)
+                  </li>
+                  <li className="programs__card-item__main-description__main-item">
+                    Корпоративные кулинарные баттлы
+                  </li>
+                  <li className="programs__card-item__main-description__main-item">
+                    Детские кулинарные курсы
+                  </li>
+                </ul>
+              </CardList>
             </div>
             <div className="programs__card-item__description">
               <img
