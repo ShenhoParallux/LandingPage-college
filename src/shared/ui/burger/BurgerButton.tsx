@@ -1,7 +1,10 @@
 import "./BurgerButton.scss";
 import { LocateIcon, PhoneIcon } from "@/shared/assets/images";
+import { useState } from "react";
 
 export const BurgerButton = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   const handleMenuLinkClick = () => {
     const checkbox = document.getElementById(
       "burger-toggle",
@@ -12,6 +15,19 @@ export const BurgerButton = () => {
     }
   };
 
+  const handleOpenMenu = () => {
+    setIsOpen(!isOpen);
+    console.log(isOpen);
+
+    if (!isOpen) {
+      document.body.style.overflow = "hidden";
+      document.body.style.height = "100vh";
+    } else {
+      document.body.style.overflow = "auto";
+      document.body.style.height = "auto";
+    }
+  };
+
   return (
     <div className="burger visible-mobile">
       <input
@@ -19,7 +35,11 @@ export const BurgerButton = () => {
         className="burger__button-toggle"
         type="checkbox"
       />
-      <label htmlFor="burger-toggle" className="burger__button">
+      <label
+        htmlFor="burger-toggle"
+        className="burger__button"
+        onClick={handleOpenMenu}
+      >
         <span className="burger__button-line--top"></span>
         <span className="burger__button-line--middle"></span>
         <span className="burger__button-line--bottom"></span>
