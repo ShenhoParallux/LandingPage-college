@@ -52,7 +52,10 @@ export const BurgerButton = () => {
               <a
                 href="#programs"
                 className="burger__menu-navigation__link"
-                onClick={handleMenuLinkClick}
+                onClick={() => {
+                  handleMenuLinkClick();
+                  handleOpenMenu();
+                }}
               >
                 Образовательные программы
               </a>
@@ -61,7 +64,10 @@ export const BurgerButton = () => {
               <a
                 href="#teachers"
                 className="burger__menu-navigation__link"
-                onClick={handleMenuLinkClick}
+                onClick={() => {
+                  handleMenuLinkClick();
+                  handleOpenMenu();
+                }}
               >
                 Наши преподаватели
               </a>
@@ -70,7 +76,10 @@ export const BurgerButton = () => {
               <a
                 href="#for"
                 className="burger__menu-navigation__link"
-                onClick={handleMenuLinkClick}
+                onClick={() => {
+                  handleMenuLinkClick();
+                  handleOpenMenu();
+                }}
               >
                 Для кого обучение
               </a>
@@ -79,7 +88,10 @@ export const BurgerButton = () => {
               <a
                 href="#graduates"
                 className="burger__menu-navigation__link"
-                onClick={handleMenuLinkClick}
+                onClick={() => {
+                  handleMenuLinkClick();
+                  handleOpenMenu();
+                }}
               >
                 Наши выпускники
               </a>
