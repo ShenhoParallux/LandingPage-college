@@ -1,4 +1,4 @@
-import { Banner, Description, Header, Programs } from "@/widgets/ui";
+import { Banner, Description, Header, Programs, Ticker } from "@/widgets/ui";
 
 export const LandingPage = () => {
   return (
@@ -7,6 +7,7 @@ export const LandingPage = () => {
       <Banner />
       <Description />
       <Programs />
+      <Ticker />
     </>
   );
 };
