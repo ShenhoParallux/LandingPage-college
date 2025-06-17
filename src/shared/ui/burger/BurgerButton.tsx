@@ -17,7 +17,6 @@ export const BurgerButton = () => {
 
   const handleOpenMenu = () => {
     setIsOpen(!isOpen);
-    console.log(isOpen);
 
     if (!isOpen) {
       document.body.style.overflow = "hidden";

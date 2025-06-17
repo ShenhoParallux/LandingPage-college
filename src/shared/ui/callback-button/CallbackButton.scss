@@ -13,7 +13,9 @@
     column-gap: 10px;
     color: var(--color-light);
 
-    height: var(--button-height-link);
+    @include mobile {
+      padding-block: 20px;
+    }
 
     &-icon {
       @include square(24px);
@@ -21,6 +23,10 @@
 
     &-description {
       font-weight: 600;
+
+      @include mobile {
+        font-size: var(--font-size-16);
+      }
     }
   }
 }

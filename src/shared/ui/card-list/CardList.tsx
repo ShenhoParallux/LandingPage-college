@@ -13,7 +13,6 @@ export const CardList: React.FC<CardListProps> = ({ title, children }) => {
 
   function handlerDropDown() {
     setIsOpen(!isOpen);
-    console.log(isOpen);
   }
 
   return (
