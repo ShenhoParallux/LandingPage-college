@@ -1,0 +1,42 @@
+@use "/src/shared/styles/helpers" as *;
+
+.forcard {
+	@include flex(flex, center, start);
+	flex-direction: column;
+	row-gap: 8px;
+	background-color: var(--color-grey-alternate);
+	padding: 16px;
+	width: 100%;
+	border-radius: var(--border-radius-8);
+
+	@include laptop {
+		padding: 12px;
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: 22px;
+
+		@include laptop {
+			font-size: 20px;
+		}
+
+		@include tablet {
+			font-size: 18px;
+		}
+	}
+
+	&__children {
+		@include flex(flex, center, start);
+		flex-direction: column;
+		row-gap: 8px;
+
+		@include laptop {
+			font-size: 16px;
+		}
+
+		@include tablet {
+			font-size: 14px;
+		}
+	}
+}

@@ -1,6 +1,7 @@
 import {
   Banner,
   Description,
+  For,
   Header,
   Programs,
   Teachers,
@@ -16,6 +17,7 @@ export const LandingPage = () => {
       <Programs />
       <Ticker />
       <Teachers />
+      <For />
     </>
   );
 };

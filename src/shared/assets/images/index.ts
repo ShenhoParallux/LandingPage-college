@@ -15,6 +15,8 @@ import Teachers2Image from "./teachers/2.jpg";
 import Teachers3Image from "./teachers/3.jpg";
 import Teachers4Image from "./teachers/4.jpg";
 import Teachers5Image from "./teachers/5.jpg";
+import ForCooksImage from "./for/cooks.jpg";
+import ForGraduatesImage from "./for/graduates.jpg";
 
 export {
   LogoImage,
@@ -34,4 +36,6 @@ export {
   Teachers4Image,
   Teachers3Image,
   Teachers5Image,
+  ForCooksImage,
+  ForGraduatesImage,
 };
