@@ -16,11 +16,11 @@
       @include flex();
       @include reset-link;
 
-      column-gap: #{rem(16)};
+      column-gap: 16px;
 
       &__image {
-        width: #{rem(37)};
-        height: #{rem(44)};
+        width: 37px;
+        height: 44px;
         z-index: 100;
       }
 
@@ -33,11 +33,11 @@
     &-access {
       @include flex();
 
-      column-gap: #{rem(56)};
-      font-size: #{rem(16)};
+      column-gap: 56px;
+      font-size: 16px;
 
       @include tablet {
-        column-gap: #{rem(20)};
+        column-gap: 20px;
       }
 
       &__address {
@@ -57,7 +57,7 @@
       &__list {
         @include flex(flex, space-between, center);
 
-        column-gap: #{rem(30)};
+        column-gap: 30px;
       }
 
       &__item {
@@ -69,7 +69,7 @@
         @include flex(inline-flex);
 
         position: relative;
-        height: #{rem(30)};
+        height: 30px;
 
         @include tablet {
           height: auto;
