@@ -11,10 +11,8 @@
 	}
 
 	&__title {
-		@include desktop {
-			text-align: center;
-			width: 100%;
-		}
+		width: 100%;
+		text-align: center;
 	}
 
 	&__main {
