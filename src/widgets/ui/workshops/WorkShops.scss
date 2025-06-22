@@ -1,0 +1,21 @@
+@use "/src/shared/styles/helpers" as *;
+
+.workshops {
+	@include flex;
+
+	padding-block: var(--section-padding-y);
+	flex-direction: column;
+	row-gap: 64px;
+
+	@include tablet {
+		row-gap: 32px;
+	}
+
+	&__images {
+		@include flex;
+
+		@include tablet {
+			flex-direction: column;
+		}
+	}
+}

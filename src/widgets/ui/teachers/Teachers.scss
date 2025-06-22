@@ -1,7 +1,7 @@
 @use "/src/shared/styles/helpers" as *;
 
 .teachers {
-	@include flex(flex, flex-center, center);
+	@include flex(flex, center, center);
 	flex-direction: column;
 	row-gap: 64px;
 	padding-block: var(--section-padding-y);

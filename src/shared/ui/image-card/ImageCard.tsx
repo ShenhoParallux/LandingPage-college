@@ -6,6 +6,7 @@ interface ImageCardProps {
   description: string;
   width: string;
   height: string;
+  wrap?: boolean;
 }
 
 export const ImageCard: React.FC<ImageCardProps> = ({
@@ -13,6 +14,7 @@ export const ImageCard: React.FC<ImageCardProps> = ({
   description,
   width,
   height,
+  wrap,
 }) => {
   return (
     <div className="imagecard">
@@ -24,7 +26,11 @@ export const ImageCard: React.FC<ImageCardProps> = ({
         height={height}
         loading="lazy"
       />
-      <span className="imagecard__description">{description}</span>
+      <span
+        className={`imagecard__description${wrap ? " imagecard__description--wrap" : ""}`}
+      >
+        {description}
+      </span>
     </div>
   );
 };
