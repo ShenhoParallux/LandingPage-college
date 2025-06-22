@@ -1,16 +1,15 @@
 import * as React from "react";
+import "./ImageCard.scss";
 
 interface ImageCardProps {
   src: string;
-  alt: string | undefined;
+  description: string;
   width: string;
   height: string;
-  description: string;
 }
 
 export const ImageCard: React.FC<ImageCardProps> = ({
   src,
-  alt,
   description,
   width,
   height,
@@ -20,7 +19,7 @@ export const ImageCard: React.FC<ImageCardProps> = ({
       <img
         className="imagecard__image"
         src={src}
-        alt={alt}
+        alt={description}
         width={width}
         height={height}
         loading="lazy"

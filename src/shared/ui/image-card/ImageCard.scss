@@ -1,6 +1,8 @@
 @use "/src/shared/styles/helpers" as *;
 
 .imagecard {
+	position: relative;
+	
 	&__image {
 		height: 100%;
 		width: auto;
