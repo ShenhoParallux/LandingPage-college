@@ -30,6 +30,10 @@
 			@include tablet {
 				width: 60%;
 			}
+
+			@include mobile {
+				width: 70%;
+			}
 		}
 	}
 }
