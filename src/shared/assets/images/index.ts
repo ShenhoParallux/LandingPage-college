@@ -17,9 +17,9 @@ import Teachers4Image from "./teachers/4.jpg";
 import Teachers5Image from "./teachers/5.jpg";
 import ForCooksImage from "./for/cooks.jpg";
 import ForGraduatesImage from "./for/graduates.jpg";
-import WorkShops1Image from "./workshops/1.jpeg";
-import WorkShops2Image from "./workshops/2.jpeg";
-import WorkShops3Image from "./workshops/3.jpeg";
+import WorkShops1Image from "./workshops/1.jpg";
+import WorkShops2Image from "./workshops/2.jpg";
+import WorkShops3Image from "./workshops/3.jpg";
 import WorkShops4Image from "./workshops/4.jpg";
 
 export {
