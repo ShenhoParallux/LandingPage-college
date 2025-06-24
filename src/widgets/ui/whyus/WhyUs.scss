@@ -1,0 +1,58 @@
+@use '/src/shared/styles/helpers' as *;
+
+.whyus {
+	@include flex();
+	flex-direction: column;
+	row-gap: 64px;
+	padding-block: var(--section-padding-y);
+
+	@include tablet {
+		row-gap: 32px;
+	}
+
+	&__title {
+		width: 100%;
+		text-align: center;
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 20px;
+		width: 100%;
+
+		@include tablet {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include mobile {
+			@include flex(flex, center, start);
+			flex-direction: column;
+			gap: 10px;
+		}
+
+		&-item {
+			@include flex(flex, center, start);
+			flex-direction: column;
+			row-gap: 16px;
+
+			@include tablet {
+				flex-direction: row;
+				column-gap: 10px;
+				align-items: center;
+			}
+		}
+
+		&-image {
+			@include tablet {
+				@include square(2.5em);
+			}
+		}
+
+		&-description {
+			@include mobile-s {
+				font-size: clamp(14px, 3.33vw, 16px);
+			}
+		}
+	}
+}

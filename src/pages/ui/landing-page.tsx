@@ -6,6 +6,7 @@ import {
   Programs,
   Teachers,
   Ticker,
+  WhyUs,
   WorkShops,
 } from "@/widgets/ui";
 
@@ -20,6 +21,7 @@ export const LandingPage = () => {
       <Teachers />
       <For />
       <WorkShops />
+      <WhyUs />
     </>
   );
 };

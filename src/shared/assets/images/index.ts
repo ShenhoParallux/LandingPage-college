@@ -21,6 +21,10 @@ import WorkShops1Image from "./workshops/1.jpg";
 import WorkShops2Image from "./workshops/2.jpg";
 import WorkShops3Image from "./workshops/3.jpg";
 import WorkShops4Image from "./workshops/4.jpg";
+import WhyUs1Image from "./whyus/1.svg";
+import WhyUs2Image from "./whyus/2.svg";
+import WhyUs3Image from "./whyus/3.svg";
+import WhyUs4Image from "./whyus/4.svg";
 
 export {
   LogoImage,
@@ -46,4 +50,8 @@ export {
   WorkShops2Image,
   WorkShops3Image,
   WorkShops4Image,
+  WhyUs1Image,
+  WhyUs2Image,
+  WhyUs3Image,
+  WhyUs4Image,
 };

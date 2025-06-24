@@ -7,3 +7,4 @@ export { Ticker } from "./ticker/Ticker";
 export { Teachers } from "./teachers/Teachers";
 export { For } from "./for/For";
 export { WorkShops } from "./workshops/WorkShops";
+export { WhyUs } from "./whyus/WhyUs";
