@@ -1,4 +1,4 @@
-@use "/src/shared/styles/helpers" as *;
+@use '/src/shared/styles/helpers' as *;
 
 .teachers {
 	@include flex(flex, center, center);
@@ -18,26 +18,6 @@
 				@include flex;
 				flex-direction: column;
 			}
-		}
-		
-		&-item {
-			position: relative;
-		}
-		
-		&-image {
-			height: 100%;
-			width: auto;
-		}
-		
-		&-description {
-			position: absolute;
-			content: '';
-			bottom: 16px;
-			left: 50%;
-			translate: -50%;
-			white-space: nowrap;
-			color: var(--color-light);
-			font-size: clamp(14px, 1.45vw, 18px);
 		}
 	}
 }
