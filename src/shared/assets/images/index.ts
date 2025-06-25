@@ -1,4 +1,4 @@
-import LogoImage from "./header/Logo.svg";
+import LogoImage from "./header/Logo.webp";
 import BurgerImage from "./burger/Burger.svg";
 import ButtonIcon from "./callback-icon/icon.svg";
 import LocateIcon from "./burger/locate.svg";
