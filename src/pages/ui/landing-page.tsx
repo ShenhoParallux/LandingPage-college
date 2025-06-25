@@ -1,6 +1,7 @@
 import {
   Banner,
   Description,
+  Footer,
   For,
   Graduates,
   Header,
@@ -24,6 +25,7 @@ export const LandingPage = () => {
       <WorkShops />
       <WhyUs />
       <Graduates />
+      <Footer />
     </>
   );
 };

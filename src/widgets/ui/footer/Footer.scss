@@ -1,0 +1,112 @@
+@use '/src/shared/styles/helpers' as *;
+
+.footer {
+	margin-top: var(--section-padding-y);
+	background-color: var(--color-dark);
+	color: var(--color-light);
+
+	&__main {
+		@include flex(flex, space-between, center);
+		column-gap: 32px;
+		padding-block: 80px 64px;
+
+		@include tablet {
+			padding-block: 60px 48px;
+			flex-direction: column;
+			align-items: start;
+			row-gap: 40px;
+
+			@include mobile {
+				row-gap: 20px;
+			}
+		}
+
+		@include mobile {
+			padding-block: 40px 20px;
+		}
+
+		&__description {
+			@include flex(flex, start, start);
+			flex-direction: column;
+			row-gap: 14px;
+
+			&-title {
+				font-size: var(--font-size-56);
+				font-weight: 300;
+				max-width: 560px;
+
+				@include tablet {
+					max-width: none;
+				}
+
+				@include mobile-s {
+					font-size: clamp(34px, 9.5vw, 46px);
+				}
+			}
+
+			&-subtitle {
+				@include mobile-s {
+					font-size: clamp(14px, 3.33vw, 16px);
+				}
+			}
+		}
+
+		&__form {
+			@include flex(flex, start, start);
+			flex-direction: column;
+			row-gap: 8px;
+
+			&-body {
+				@include flex(flex, start, start);
+				flex-direction: column;
+				row-gap: 8px;
+				width: 100%;
+			}
+
+			&-description {
+				font-size: 15px;
+				color: var(--color-grey);
+
+				@include mobile {
+					font-size: var(--font-size-14);
+				}
+			}
+		}
+	}
+
+	&__info {
+		padding-block: 40px;
+
+		@include tablet {
+			padding-block: 20px;
+		}
+
+		@include mobile {
+			padding-block: 10px;
+		}
+
+		&-list {
+			@include flex(flex, space-between, center);
+			column-gap: 32px;
+			flex-wrap: wrap;
+			row-gap: 20px;
+		}
+
+		&-item {
+			&__contacts {
+				font-size: 22px;
+				font-weight: 500;
+
+				@include mobile {
+					font-size: var(--font-size-18);
+				}
+			}
+
+			&__link {
+				@include flex();
+				@include reset-link;
+				column-gap: 10px;
+			}
+		}
+	}
+}

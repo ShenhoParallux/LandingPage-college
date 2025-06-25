@@ -10,7 +10,7 @@ export const CallbackButton: React.FC<ICallbackButton> = ({
   isLinkToFooter,
 }) => {
   return !isLinkToFooter ? (
-    <button type="button" className="button button__callback">
+    <button type="submit" className="button button__callback">
       Оставить заявку
     </button>
   ) : (
