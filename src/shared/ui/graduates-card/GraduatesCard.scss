@@ -1,0 +1,62 @@
+@use '/src/shared/styles/helpers' as *;
+
+.graduatescard {
+	position: relative;
+	padding: 24px;
+	background-color: var(--color-grey-alternate);
+	min-height: 450px;
+	max-width: 700px;
+	height: 100%;
+
+	@include mobile {
+		min-height: auto;
+	}
+
+	&__main {
+		@include flex(flex, space-between, flex-start);
+		position: relative;
+		flex-direction: column;
+		z-index: 1;
+		height: 100%;
+		row-gap: 16px;
+
+		&__info {
+			@include flex(flex, start, start);
+			flex-direction: column;
+			row-gap: 16px;
+
+			&-title {
+				font-size: 56px;
+				font-weight: 300;
+			}
+
+			&-place {
+				font-size: 22px;
+				font-weight: 500;
+				max-width: 400px;
+			}
+		}
+
+		&-description {
+			padding: 16px;
+			background-color: var(--color-light);
+			border-radius: var(--border-radius-8);
+			opacity: 0.9;
+
+			@include mobile {
+				font-size: 14px;
+			}
+		}
+	}
+
+	&__image {
+		position: absolute;
+		content: '';
+		bottom: 0;
+		right: 5%;
+
+		@include mobile {
+			height: 80%;
+		}
+	}
+}

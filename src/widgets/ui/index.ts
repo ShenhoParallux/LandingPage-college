@@ -8,3 +8,4 @@ export { Teachers } from "./teachers/Teachers";
 export { For } from "./for/For";
 export { WorkShops } from "./workshops/WorkShops";
 export { WhyUs } from "./whyus/WhyUs";
+export { Graduates } from "./graduates/Graduates";

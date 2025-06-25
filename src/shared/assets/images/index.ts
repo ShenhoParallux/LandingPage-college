@@ -25,6 +25,12 @@ import WhyUs1Image from "./whyus/1.svg";
 import WhyUs2Image from "./whyus/2.svg";
 import WhyUs3Image from "./whyus/3.svg";
 import WhyUs4Image from "./whyus/4.svg";
+import Graduates1Image from "./graduates/1.png";
+import Graduates2Image from "./graduates/2.png";
+import Graduates3Image from "./graduates/3.png";
+import Graduates4Image from "./graduates/4.png";
+import Graduates5Image from "./graduates/5.png";
+import Graduates6Image from "./graduates/6.png";
 
 export {
   LogoImage,
@@ -54,4 +60,10 @@ export {
   WhyUs2Image,
   WhyUs3Image,
   WhyUs4Image,
+  Graduates1Image,
+  Graduates2Image,
+  Graduates3Image,
+  Graduates4Image,
+  Graduates5Image,
+  Graduates6Image,
 };

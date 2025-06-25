@@ -1,0 +1,29 @@
+@use '/src/shared/styles/helpers' as *;
+
+.graduates {
+	@include flex;
+	flex-direction: column;
+	row-gap: 64px;
+	padding-block: var(--section-padding-y);
+
+	@include tablet {
+		row-gap: 32px;
+	}
+
+	&__title {
+		width: 100%;
+		text-align: center;
+	}
+
+	&__cards {
+		&-list {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 24px;
+
+			@include laptop {
+				grid-template-columns: repeat(1, 1fr);
+			}
+		}
+	}
+}
