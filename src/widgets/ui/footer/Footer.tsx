@@ -1,7 +1,10 @@
 import { CallbackButton, Input, LocateIcon, PhoneIcon } from "@/shared";
 import "./Footer.scss";
+import { UseSubmitForm } from "@/features";
 
 export const Footer = () => {
+  const { handleSubmit, formData, setFormData, status } = UseSubmitForm();
+
   return (
     <footer id="footer" className={"footer"}>
       <div className="footer__main container">
@@ -13,21 +16,53 @@ export const Footer = () => {
             Оставьте заявку и мы свяжемся с вами
           </div>
         </div>
-        <div className="footer__main__form">
+        <form className="footer__main__form" onSubmit={handleSubmit}>
           <div className="footer__main__form-body">
-            <Input id={"name"} placeholder={"Имя"} type={"text"} />
-            <Input id={"tel"} placeholder={"+7"} type={"tel"} />
+            <Input
+              id={"name"}
+              placeholder={"Имя"}
+              type={"text"}
+              label={"Имя"}
+              value={formData.name}
+              change={(e) => setFormData({ ...formData, name: e.target.value })}
+            />
+            <Input
+              id={"tel"}
+              placeholder={"+7"}
+              type={"tel"}
+              label={"Номер телефона"}
+              value={formData.tel}
+              change={(e) => setFormData({ ...formData, tel: e.target.value })}
+            />
             <Input
               id={"email"}
               placeholder={"Электронная почта"}
               type={"email"}
+              label={"Электронная почта"}
+              value={formData.email}
+              change={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
             />
           </div>
           <div className="footer__main__form-description">
             Нажимая на кнопку, я соглашаюсь на обработку персональных данных
           </div>
           <CallbackButton isLinkToFooter={false} />
-        </div>
+          {status === "sending" ? (
+            <div style={{ color: "green" }}>Идет отправка...</div>
+          ) : status === "success" ? (
+            <div style={{ color: "green" }}>
+              Ваша заявка успешно отправлена!
+            </div>
+          ) : (
+            status === "error" && (
+              <div style={{ color: "red" }}>
+                Произошла ошибка, попробуйте ещё раз
+              </div>
+            )
+          )}
+        </form>
       </div>
       <hr />
       <div className="footer__info container">
