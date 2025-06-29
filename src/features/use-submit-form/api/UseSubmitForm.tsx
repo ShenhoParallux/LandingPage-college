@@ -1,13 +1,11 @@
 import * as React from "react";
 import { useState } from "react";
-
-interface iFormData {
-  name: string;
-  tel: string;
-  email: string;
-}
-
-type iStatus = "success" | "error" | "sending" | null;
+import type { iFormData, iStatus } from "@/features/use-submit-form/model";
+import {
+  isValidEmail,
+  isValidName,
+  isValidPhoneNumber,
+} from "@/features/use-submit-form/lib";
 
 export const UseSubmitForm = () => {
   const [formData, setFormData] = useState<iFormData>({
@@ -27,6 +25,18 @@ export const UseSubmitForm = () => {
       tel: formData.tel,
       email: formData.email,
     };
+
+    if (!isValidName(formData.name)) {
+      setStatus("notValidName");
+      return;
+    } else if (!isValidPhoneNumber(formData.tel)) {
+      setStatus("notValidNumber");
+      return;
+    } else if (!isValidEmail(formData.email)) {
+      setStatus("notValidEmail");
+      return;
+    }
+
     try {
       const response = await fetch(import.meta.env.VITE_URL, {
         method: "POST",
@@ -34,12 +44,14 @@ export const UseSubmitForm = () => {
         body: JSON.stringify(data),
       });
 
-      const result = await response.json();
-      console.log(`Успешно отправлено: ${result}`);
-      setStatus("success");
-      resetFormData();
+      if (!response.ok) {
+        setStatus("error");
+      } else {
+        setStatus("success");
+        resetFormData();
+      }
     } catch (err) {
-      console.log(`Ошибка: ${err}`);
+      console.log(err);
       setStatus("error");
     }
   };

@@ -1,5 +1,13 @@
 @use '/src/shared/styles/helpers' as *;
 
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
+}
+
 .footer {
 	margin-top: var(--section-padding-y);
 	background-color: var(--color-dark);

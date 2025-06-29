@@ -1,1 +1,1 @@
-export { UseSubmitForm } from "./use-submit-form/UseSubmitForm.tsx";
+export { UseSubmitForm } from "./use-submit-form/api/UseSubmitForm.tsx";

@@ -50,16 +50,20 @@ export const Footer = () => {
           </div>
           <CallbackButton isLinkToFooter={false} />
           {status === "sending" ? (
-            <div style={{ color: "green" }}>Идет отправка...</div>
+            <div className={"green"}>Идёт отправка...</div>
           ) : status === "success" ? (
-            <div style={{ color: "green" }}>
-              Ваша заявка успешно отправлена!
+            <div className={"green"}>Ваша заявка успешно отправлена!</div>
+          ) : status === "error" ? (
+            <div className={"red"}>
+              Произошла ошибка при отправке, попробуйте ещё раз
             </div>
+          ) : status === "notValidName" ? (
+            <div className={"red"}>Имя введено неккоректно</div>
+          ) : status === "notValidNumber" ? (
+            <div className={"red"}>Номер телефона неккоректен</div>
           ) : (
-            status === "error" && (
-              <div style={{ color: "red" }}>
-                Произошла ошибка, попробуйте ещё раз
-              </div>
+            status === "notValidEmail" && (
+              <div className={"red"}>Почта введена неккоректно</div>
             )
           )}
         </form>
