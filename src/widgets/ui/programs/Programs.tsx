@@ -67,7 +67,7 @@ export const Programs = () => {
               <img
                 className="programs__card-item__description-image"
                 src={Programs1Image}
-                alt=""
+                alt=" "
                 width="240"
                 height="410"
                 loading="lazy"
@@ -123,7 +123,7 @@ export const Programs = () => {
               <img
                 className="programs__card-item__description-image"
                 src={Programs2Image}
-                alt=""
+                alt=" "
                 width="240"
                 height="410"
                 loading="lazy"
@@ -202,7 +202,7 @@ export const Programs = () => {
               <img
                 className="programs__card-item__description-image"
                 src={Programs3Image}
-                alt=""
+                alt=" "
                 width="240"
                 height="410"
                 loading="lazy"
@@ -257,7 +257,7 @@ export const Programs = () => {
               <img
                 className="programs__card-item__description-image"
                 src={Programs4Image}
-                alt=""
+                alt=" "
                 width="240"
                 height="410"
                 loading="lazy"
