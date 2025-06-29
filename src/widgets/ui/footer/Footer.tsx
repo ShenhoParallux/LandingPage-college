@@ -1,9 +1,11 @@
 import { CallbackButton, Input, LocateIcon, PhoneIcon } from "@/shared";
 import "./Footer.scss";
 import { UseSubmitForm } from "@/features";
+import { useState } from "react";
 
 export const Footer = () => {
   const { handleSubmit, formData, setFormData, status } = UseSubmitForm();
+  const [isChecked, setIsChecked] = useState(false);
 
   return (
     <footer id="footer" className={"footer"}>
@@ -47,7 +49,21 @@ export const Footer = () => {
             />
           </div>
           <div className="footer__main__form-description">
-            Нажимая на кнопку, я соглашаюсь на обработку персональных данных
+            <div className="footer__main__form-description-checkbox">
+              <label htmlFor="footer-checkbox" className={"visually-hidden"}>
+                Кнопка
+              </label>
+              <input
+                type="checkbox"
+                id="footer-checkbox"
+                required={true}
+                checked={isChecked}
+                onClick={() => setIsChecked(!isChecked)}
+              />
+            </div>
+            <span className="footer__main__form-description-text">
+              Нажимая на кнопку, я соглашаюсь на обработку персональных данных
+            </span>
           </div>
           <CallbackButton isLinkToFooter={false} />
           {status === "sending" ? (
