@@ -58,7 +58,7 @@ export const Footer = () => {
                 id="footer-checkbox"
                 required={true}
                 checked={isChecked}
-                onClick={() => setIsChecked(!isChecked)}
+                onChange={() => setIsChecked(!isChecked)}
               />
             </div>
             <span className="footer__main__form-description-text">
@@ -90,7 +90,7 @@ export const Footer = () => {
         <ul className="footer__info-list">
           <li className="footer__info-item footer__info-item__contacts">
             <a
-              href="tel:8(862)254-47-43"
+              href="tel:+78622544743"
               title="Позвонить по номеру телефона"
               className="footer__info-item__link"
             >
@@ -102,7 +102,7 @@ export const Footer = () => {
                 height="40"
                 loading="lazy"
               />
-              8 (862) 254-47-43
+              +7 (862) 254-47-43
             </a>
           </li>
           <li className="footer__info-item footer__info-item__address">
