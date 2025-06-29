@@ -28,11 +28,12 @@ export const Footer = () => {
             />
             <Input
               id={"tel"}
-              placeholder={"+7"}
+              placeholder={"+7(___)___-__-__"}
               type={"tel"}
               label={"Номер телефона"}
               value={formData.tel}
               change={(e) => setFormData({ ...formData, tel: e.target.value })}
+              mask={true}
             />
             <Input
               id={"email"}
