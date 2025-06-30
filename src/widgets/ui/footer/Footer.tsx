@@ -59,6 +59,7 @@ export const Footer = () => {
                 required={true}
                 checked={isChecked}
                 onChange={() => setIsChecked(!isChecked)}
+                style={{ cursor: "pointer" }}
               />
             </div>
             <span className="footer__main__form-description-text">
