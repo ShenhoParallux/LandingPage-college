@@ -99,7 +99,7 @@ export const BurgerButton = () => {
         </nav>
 
         <div className="burger__menu-access">
-          <a href="tel:8(862)254-47-43" className="burger__menu-access__number">
+          <a href="tel:+78622544743" className="burger__menu-access__number">
             <img
               className="burger__menu-access__number-icon"
               src={PhoneIcon}
@@ -109,7 +109,7 @@ export const BurgerButton = () => {
               loading="lazy"
             />
             <span className="burger__menu-access__number-main">
-              8 (862) 254-47-43
+              +7 (862) 254-47-43
             </span>
           </a>
           <a
