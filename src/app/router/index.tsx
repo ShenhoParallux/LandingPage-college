@@ -1,21 +1,17 @@
-import { createBrowserRouter } from "react-router-dom";
-import { LandingPage } from "@/pages";
-import { Layout } from "@/shared/ui/layout";
+import React from "react";
+import { Outlet } from "react-router-dom";
+import { Footer, Header } from "@/widgets/ui";
 
-export const router = createBrowserRouter(
-  [
-    {
-      path: "/",
-      element: <Layout />,
-      children: [
-        {
-          index: true,
-          element: <LandingPage />,
-        },
-      ],
-    },
-  ],
-  {
-    basename: "/LandingPage-college/",
-  },
-);
+const Layout = () => {
+  return (
+    <React.Fragment>
+      <Header />
+      <main className={"main"}>
+        <Outlet />
+      </main>
+      <Footer />
+    </React.Fragment>
+  );
+};
+
+export default Layout;

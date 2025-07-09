@@ -1,10 +1,8 @@
 import {
   Banner,
   Description,
-  Footer,
   For,
   Graduates,
-  Header,
   Programs,
   Teachers,
   Ticker,
@@ -15,7 +13,6 @@ import {
 export const LandingPage = () => {
   return (
     <>
-      <Header />
       <Banner />
       <Description />
       <Programs />
@@ -25,7 +22,6 @@ export const LandingPage = () => {
       <WorkShops />
       <WhyUs />
       <Graduates />
-      <Footer />
     </>
   );
 };
