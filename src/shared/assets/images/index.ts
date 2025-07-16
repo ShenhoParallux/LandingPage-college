@@ -1,5 +1,4 @@
 import LogoImage from "./header/Logo.webp";
-import BurgerImage from "./burger/Burger.svg";
 import ButtonIcon from "./callback-icon/icon.svg";
 import LocateIcon from "./burger/locate.svg";
 import PhoneIcon from "./burger/phone.svg";
@@ -34,7 +33,6 @@ import Graduates6Image from "./graduates/6.webp";
 
 export {
   LogoImage,
-  BurgerImage,
   BannerBackgroundImage,
   ButtonIcon,
   LocateIcon,

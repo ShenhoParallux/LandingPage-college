@@ -1,19 +1,19 @@
 .workshops {
-	@include flex();
+  @include flex();
 
-	padding-block: var(--section-padding-y);
-	flex-direction: column;
-	row-gap: rem(64);
+  padding-block: var(--section-padding-y);
+  flex-direction: column;
+  row-gap: rem(64);
 
-	@include tablet {
-		row-gap: rem(32);
-	}
+  @include tablet {
+    row-gap: rem(32);
+  }
 
-	&__images {
-		@include flex();
+  &__images {
+    @include flex();
 
-		@include tablet {
-			flex-direction: column;
-		}
-	}
+    @include tablet {
+      flex-direction: column;
+    }
+  }
 }

@@ -46,7 +46,6 @@ export const For = () => {
               width="698"
               height="531"
               loading="lazy"
-              style={{ borderRadius: "8px" }}
             />
           </div>
         </div>

@@ -1,32 +1,32 @@
-.imagecard {
-	position: relative;
-	
-	&__image {
-		height: 100%;
-	}
+ .imagecard {
+  position: relative;
 
-	&__description {
-		position: absolute;
-		content: '';
-		bottom: rem(16);
-		left: 50%;
-		translate: -50%;
-		white-space: nowrap;
-		color: var(--color-light);
-		font-size: clamp(#{rem(14)}, 1.45vw, #{rem(18)});
+  &__image {
+    height: 100%;
+  }
 
-		@include tablet {
-			font-size: rem(18);
-		}
+  &__description {
+    position: absolute;
+    content: "";
+    bottom: rem(16);
+    left: 50%;
+    translate: -50%;
+    white-space: nowrap;
+    color: var(--color-light);
+    font-size: clamp(#{rem(14)}, 1.45vw, #{rem(18)});
 
-		&--wrap {
-			white-space: wrap;
-			width: 68%;
-			text-align: center;
+    @include tablet {
+      font-size: rem(18);
+    }
 
-			@include tablet {
-				width: 60%;
-			}
-		}
-	}
+    &--wrap {
+      white-space: wrap;
+      width: 68%;
+      text-align: center;
+
+      @include tablet {
+        width: 60%;
+      }
+    }
+  }
 }
