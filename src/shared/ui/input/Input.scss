@@ -4,7 +4,7 @@
 	width: 100%;
 	&__main {
 		width: 100%;
-		padding: 12px 16px;
+		padding: rem(12) rem(16);
 		background-color: transparent;
 		border: var(--border-input);
 		border-radius: var(--border-radius-8);
@@ -17,12 +17,12 @@
 		}
 
 		&:focus {
-			outline: 1px solid var(--color-light);
+			outline: rem(1) solid var(--color-light);
 		}
 
 		@include mobile-s {
 			font-size: var(--font-size-16);
-			padding: 10px 14px;
+			padding: rem(10) rem(14);
 		}
 
 	}

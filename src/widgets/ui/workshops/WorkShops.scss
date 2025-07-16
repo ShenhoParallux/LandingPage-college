@@ -1,18 +1,16 @@
-@use "/src/shared/styles/helpers" as *;
-
 .workshops {
-	@include flex;
+	@include flex();
 
 	padding-block: var(--section-padding-y);
 	flex-direction: column;
-	row-gap: 64px;
+	row-gap: rem(64);
 
 	@include tablet {
-		row-gap: 32px;
+		row-gap: rem(32);
 	}
 
 	&__images {
-		@include flex;
+		@include flex();
 
 		@include tablet {
 			flex-direction: column;

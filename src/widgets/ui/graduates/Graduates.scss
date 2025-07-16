@@ -1,13 +1,11 @@
-@use '/src/shared/styles/helpers' as *;
-
 .graduates {
 	@include flex;
 	flex-direction: column;
-	row-gap: 64px;
+	row-gap: rem(64);
 	padding-block: var(--section-padding-y);
 
 	@include tablet {
-		row-gap: 32px;
+		row-gap: rem(32);
 	}
 
 	&__title {
@@ -19,7 +17,7 @@
 		&-list {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
-			gap: 24px;
+			gap: rem(24);
 
 			@include laptop {
 				grid-template-columns: repeat(1, 1fr);

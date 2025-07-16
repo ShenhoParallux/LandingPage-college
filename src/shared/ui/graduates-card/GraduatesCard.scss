@@ -1,11 +1,9 @@
-@use '/src/shared/styles/helpers' as *;
-
 .graduatescard {
 	position: relative;
-	padding: 24px;
+	padding: rem(24);
 	background-color: var(--color-grey-alternate);
-	min-height: 450px;
-	max-width: 700px;
+	min-height: rem(450);
+	max-width: rem(700);
 	height: 100%;
 
 	@include mobile {
@@ -18,42 +16,42 @@
 		flex-direction: column;
 		z-index: 1;
 		height: 100%;
-		row-gap: 16px;
+		row-gap: rem(16);
 
 		&__info {
 			@include flex(flex, start, start);
 			flex-direction: column;
-			row-gap: 16px;
+			row-gap: rem(16);
 
 			&-title {
-				font-size: 56px;
+				font-size: rem(56);
 				font-weight: 300;
 
 				@include mobile {
-					font-size: clamp(34px, 7.3vw, 56px);
+					font-size: clamp(#{rem(34)}, 7.3vw, #{rem(56)});
 				}
 			}
 
 			&-place {
-				font-size: 22px;
+				font-size: rem(22);
 				font-weight: 500;
-				max-width: 400px;
+				max-width: rem(400);
 			}
 		}
 
 		&-description {
-			padding: 16px;
+			padding: rem(16);
 			background-color: var(--color-light);
 			border-radius: var(--border-radius-8);
 			opacity: 0.9;
 
 			@include mobile {
-				font-size: 14px;
+				font-size: rem(14);
 			}
 
 			@include mobile-s {
-				margin-top: 200px;
-				font-size: clamp(12px, 2.9vw, 14px);
+				margin-top: rem(200);
+				font-size: clamp(#{rem(12)}, 2.9vw, #{rem(14)});
 			}
 		}
 	}
@@ -62,6 +60,7 @@
 		position: absolute;
 		bottom: 0;
 		right: 5%;
+		height: rem(360);
 
 		@include mobile-s {
 			left: 50%;

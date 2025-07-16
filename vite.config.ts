@@ -6,4 +6,11 @@ import tsconfigPaths from "vite-tsconfig-paths";
 export default defineConfig({
   plugins: [react(), tsconfigPaths()],
   base: "/LandingPage-college/",
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@use '/src/shared/styles/helpers' as *;`,
+      },
+    },
+  },
 });

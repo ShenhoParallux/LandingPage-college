@@ -1,13 +1,11 @@
-@use '/src/shared/styles/helpers' as *;
-
 .teachers {
 	@include flex(flex, center, center);
 	flex-direction: column;
-	row-gap: 64px;
+	row-gap: rem(64);
 	padding-block: var(--section-padding-y);
 
 	@include tablet {
-		row-gap: 32px;
+		row-gap: rem(32);
 	}
 
 	&__images {

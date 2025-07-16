@@ -1,25 +1,23 @@
-@use "/src/shared/styles/helpers" as *;
-
 .card {
 	@include flex(inline-flex);
-	height: 49px;
-	padding-inline: 16px;
+	height: rem(49);
+	padding-inline: rem(16);
 	background-color: var(--color-blue-alternate);
 	border-radius: var(--border-radius-8);
 	color: var(--color-light);
 
 	@include laptop {
-		padding-block: 4px;
+		padding-block: rem(4);
 		font-size: var(--font-size-14);
 	}
 
 	@include mobile {
-		padding: 12px;
+		padding: rem(12);
 		height: auto;
 	}
 
 	@include mobile-s {
-		padding: 8px;
+		padding: rem(8);
 	}
 
 	&__content {

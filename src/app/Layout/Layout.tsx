@@ -2,7 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import { Footer, Header } from "@/widgets/ui";
 
-const Layout = () => {
+export const Layout = () => {
   return (
     <React.Fragment>
       <Header />
@@ -13,5 +13,3 @@ const Layout = () => {
     </React.Fragment>
   );
 };
-
-export default Layout;

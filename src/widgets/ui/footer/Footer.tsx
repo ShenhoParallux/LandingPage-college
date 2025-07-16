@@ -96,7 +96,7 @@ export const Footer = () => {
               className="footer__info-item__link"
             >
               <img
-                className="footer__info-item__link-image"
+                className="footer__info-item__link-image sb"
                 src={PhoneIcon}
                 alt=""
                 width="40"
@@ -113,7 +113,7 @@ export const Footer = () => {
               className="footer__info-item__link"
             >
               <img
-                className="footer__info-item__link-image"
+                className="footer__info-item__link-image sb"
                 src={LocateIcon}
                 alt=""
                 width="40"

@@ -58,7 +58,6 @@ export const For = () => {
             width="698"
             height="416"
             loading="lazy"
-            style={{ borderRadius: "8px" }}
           />
           <div className="for__main-cooks__content">
             <div className="for__main-cooks__content-title">

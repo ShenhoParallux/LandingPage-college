@@ -1,11 +1,13 @@
-@use '/src/shared/styles/helpers' as *;
-
 .red {
 	color: red;
 }
 
 .green {
 	color: green;
+}
+
+.sb {
+	@include square(#{rem(40)});
 }
 
 .footer {
@@ -15,46 +17,46 @@
 
 	&__main {
 		@include flex(flex, space-between, center);
-		column-gap: 32px;
-		padding-block: 80px 64px;
+		column-gap: rem(32);
+		padding-block: rem(80) rem(64);
 
 		@include tablet {
-			padding-block: 60px 48px;
+			padding-block: rem(60) rem(48);
 			flex-direction: column;
 			align-items: start;
-			row-gap: 40px;
+			row-gap: rem(40);
 
 			@include mobile {
-				row-gap: 20px;
+				row-gap: rem(20);
 			}
 		}
 
 		@include mobile {
-			padding-block: 40px 20px;
+			padding-block: rem(40) rem(20);
 		}
 
 		&__description {
 			@include flex(flex, start, start);
 			flex-direction: column;
-			row-gap: 14px;
+			row-gap: rem(14);
 
 			&-title {
 				font-size: var(--font-size-56);
 				font-weight: 300;
-				max-width: 560px;
+				max-width: rem(560);
 
 				@include tablet {
 					max-width: none;
 				}
 
 				@include mobile-s {
-					font-size: clamp(34px, 9.5vw, 46px);
+					font-size: clamp(#{rem(34)}, 9.5vw, #{rem(46)});
 				}
 			}
 
 			&-subtitle {
 				@include mobile-s {
-					font-size: clamp(14px, 3.33vw, 16px);
+					font-size: clamp(#{rem(14)}, 3.33vw, #{rem(16)});
 				}
 			}
 		}
@@ -62,19 +64,19 @@
 		&__form {
 			@include flex(flex, start, start);
 			flex-direction: column;
-			row-gap: 8px;
+			row-gap: rem(8);
 
 			&-body {
 				@include flex(flex, start, start);
 				flex-direction: column;
-				row-gap: 8px;
+				row-gap: rem(8);
 				width: 100%;
 			}
 
 			&-description {
 				@include flex;
-				column-gap: 6px;
-				font-size: 15px;
+				column-gap: rem(6);
+				font-size: rem(15);
 				color: var(--color-grey);
 
 				@include mobile {
@@ -85,26 +87,26 @@
 	}
 
 	&__info {
-		padding-block: 40px;
+		padding-block: rem(40);
 
 		@include tablet {
-			padding-block: 20px;
+			padding-block: rem(20);
 		}
 
 		@include mobile {
-			padding-block: 10px;
+			padding-block: rem(10);
 		}
 
 		&-list {
 			@include flex(flex, space-between, center);
-			column-gap: 32px;
+			column-gap: rem(32);
 			flex-wrap: wrap;
-			row-gap: 20px;
+			row-gap: rem(20);
 		}
 
 		&-item {
 			&__contacts {
-				font-size: 22px;
+				font-size: rem(22);
 				font-weight: 500;
 
 				@include mobile {
@@ -115,7 +117,7 @@
 			&__link {
 				@include flex();
 				@include reset-link;
-				column-gap: 10px;
+				column-gap: rem(10);
 			}
 		}
 	}

@@ -1,5 +1,3 @@
-@use "/src/shared/styles/helpers" as *;
-
 .header {
   position: absolute;
   top: 0;
@@ -7,7 +5,7 @@
   width: 100%;
   color: var(--color-light);
   background-color: transparent;
-  padding-block: 10px;
+  padding-block: rem(10);
 
   &__information {
     @include flex(flex, space-between, center);
@@ -16,11 +14,11 @@
       @include flex();
       @include reset-link;
 
-      column-gap: 16px;
+      column-gap: rem(16);
 
       &__image {
-        width: 37px;
-        height: 44px;
+        width: rem(37);
+        height: rem(44);
         z-index: 100;
       }
 
@@ -33,11 +31,11 @@
     &-access {
       @include flex();
 
-      column-gap: 56px;
-      font-size: 16px;
+      column-gap: rem(56);
+      font-size: rem(16);
 
       @include tablet {
-        column-gap: 20px;
+        column-gap: rem(20);
       }
 
       &__address {
@@ -57,7 +55,7 @@
       &__list {
         @include flex(flex, space-between, center);
 
-        column-gap: 30px;
+        column-gap: rem(30);
       }
 
       &__item {
@@ -69,7 +67,7 @@
         @include flex(inline-flex);
 
         position: relative;
-        height: 30px;
+        height: rem(30);
 
         @include tablet {
           height: auto;
@@ -82,7 +80,7 @@
           left: 50%;
           translate: -50% -50%;
           width: 0;
-          height: 1px;
+          height: rem(1);
           background-color: var(--color-light);
           transition: var(--transition-duration);
         }

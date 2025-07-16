@@ -19,26 +19,26 @@
   --font-size-56: #{rem(56)};
   --font-size-22: #{rem(22)};
 
-  --border: 1px solid var(--color-grey-alternate);
-  --border-input: 1px solid var(--color-grey);
-  --border-radius-8: 8px;
+  --border: #{rem(1)} solid var(--color-grey-alternate);
+  --border-input: #{rem(1)} solid var(--color-grey);
+  --border-radius-8: #{rem(8)};
 
-  --button-height-link: 72px;
-  --button-height-callback: 55px;
-  --button-padding-x: 32px;
+  --button-height-link: #{rem(72)};
+  --button-height-callback: #{rem(55)};
+  --button-padding-x: #{rem(32)};
 
   --container-width: #{rem(1420)};
   --container-padding-x: #{rem(16)};
 
-  --section-padding-y: 60px;
+  --section-padding-y: #{rem(60)};
 
   --transition-duration: 0.1s;
 
   @include tablet {
-    --section-padding-y: 30px;
+    --section-padding-y: #{rem(30)};
   }
 
   @include mobile {
-    --button-padding-x: 16px;
+    --button-padding-x: #{rem(16)};
   }
 }

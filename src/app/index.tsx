@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { LandingPage } from "@/pages";
-import Layout from "@/app/router";
+import { Layout } from "@/app/Layout";
 
 export const App = () => {
   return (
