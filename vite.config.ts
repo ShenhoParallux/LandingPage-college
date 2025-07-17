@@ -5,7 +5,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tsconfigPaths()],
-  base: "/LandingPage-college/",
+  base: "/Mastery-of-taste-UETK/",
   css: {
     preprocessorOptions: {
       scss: {
