@@ -55,7 +55,7 @@
     font-size: clamp(1.125rem, 2.868vw, 1.375rem);
 
     &-navigation {
-      margin-top: rem(100);
+      margin-top: rem(120);
       &__list {
         @include flex(flex, start, start);
         flex-direction: column;
