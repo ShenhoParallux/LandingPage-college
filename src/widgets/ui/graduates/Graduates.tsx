@@ -42,7 +42,7 @@ export const Graduates = () => {
           <li className="graduates__cards-item">
             <GraduatesCard
               title={"Леван Лакия"}
-              tag={"Кондитер"}
+              tag={"Су-шеф кондитер"}
               place={'Ресторан "D.O.M."'}
               year={"Выпускник 2024 года"}
               description={
