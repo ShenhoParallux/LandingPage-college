@@ -216,7 +216,10 @@ export const Programs = () => {
           <li className="programs__card-item">
             <div className="programs__card-item__main">
               <h3 className="programs__card-item__main-title">
-                Программы дополнительного образования для детей и взрослых
+                Программы дополнительного образования для детей{" "}
+                <span className={"programs__card-item__main-title--span"}>
+                  и взрослых
+                </span>
               </h3>
               <div className="programs__card-item__main-tags">
                 <CardTag content={"Мастер-классы, кулинарные тимбилдинги"} />
