@@ -11,8 +11,8 @@ export const Header = () => {
             className="header__information-logo__image"
             src={LogoImage}
             alt=""
-            width="37"
-            height="44"
+            width={100}
+            height={100}
             loading="lazy"
           />
           <div className="header__information-logo__description">

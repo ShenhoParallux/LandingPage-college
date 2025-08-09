@@ -22,7 +22,7 @@ export const Teachers = () => {
           />
           <ImageCard
             src={Teachers2Image}
-            description={"НадеждаГончарова"}
+            description={"Надежда `Гончарова"}
             width={"264"}
             height={"461"}
           />

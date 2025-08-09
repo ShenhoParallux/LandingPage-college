@@ -17,8 +17,7 @@
       column-gap: rem(16);
 
       &__image {
-        width: rem(37);
-        height: rem(44);
+        @include square(#{rem(50)});
         z-index: 100;
       }
 
