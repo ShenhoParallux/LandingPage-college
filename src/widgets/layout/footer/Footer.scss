@@ -82,6 +82,18 @@
         @include mobile {
           font-size: var(--font-size-14);
         }
+
+        &-text--link {
+          color: var(--color-blue-alternate);
+          text-decoration: underline;
+          cursor: pointer;
+          transition-property: color;
+          transition-duration: var(--transition-duration);
+
+          @include hover {
+            color: var(--color-blue);
+          }
+        }
       }
     }
   }

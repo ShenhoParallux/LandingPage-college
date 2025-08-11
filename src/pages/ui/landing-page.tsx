@@ -8,7 +8,7 @@ import {
   Ticker,
   WhyUs,
   WorkShops,
-} from "@/widgets/home";
+} from '@/widgets/home';
 
 export const LandingPage = () => {
   return (
