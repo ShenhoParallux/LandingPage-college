@@ -1,7 +1,7 @@
-import "./Input.scss";
-import type { ChangeEventHandler, HTMLInputTypeAttribute } from "react";
-import * as React from "react";
-import { IMaskInput } from "react-imask";
+import './Input.scss';
+import type { ChangeEventHandler, HTMLInputTypeAttribute } from 'react';
+import * as React from 'react';
+import { IMaskInput } from 'react-imask';
 
 interface InputProps {
   id: string;
@@ -23,13 +23,13 @@ export const Input: React.FC<InputProps> = ({
   mask,
 }) => {
   return (
-    <div className={"input"}>
+    <div className={'input'}>
       <label htmlFor={id} className="visually-hidden">
         {label}
       </label>
       {mask ? (
         <IMaskInput
-          className={"input__main"}
+          className={'input__main'}
           type={type}
           placeholder={placeholder}
           required={true}
@@ -37,12 +37,12 @@ export const Input: React.FC<InputProps> = ({
           name={id}
           value={value}
           onChange={change}
-          mask={"+0(000)000-00-00"}
-          placeholderChar={"_"}
+          mask={'+7(000)000-00-00'}
+          placeholderChar={'_'}
         />
       ) : (
         <input
-          className={"input__main"}
+          className={'input__main'}
           type={type}
           placeholder={placeholder}
           required={true}

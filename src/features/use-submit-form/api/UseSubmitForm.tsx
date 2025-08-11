@@ -1,25 +1,25 @@
-import * as React from "react";
-import { useState } from "react";
-import type { iFormData, iStatus } from "@/features/use-submit-form/model";
+import * as React from 'react';
+import { useState } from 'react';
+import type { iFormData, iStatus } from '@/features/use-submit-form/model';
 import {
   isValidEmail,
   isValidName,
   isValidPhoneNumber,
-} from "@/features/use-submit-form/lib";
+} from '@/features/use-submit-form/lib';
 
 export const UseSubmitForm = () => {
   const [formData, setFormData] = useState<iFormData>({
-    name: "",
-    tel: "",
-    email: "",
+    name: '',
+    tel: '',
+    email: '',
   });
   const [status, setStatus] = useState<iStatus>(null);
 
-  const resetFormData = () => setFormData({ name: "", email: "", tel: "" });
+  const resetFormData = () => setFormData({ name: '', email: '', tel: '' });
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setStatus("sending");
+    setStatus('sending');
     const data: iFormData = {
       name: formData.name,
       tel: formData.tel,
@@ -27,32 +27,31 @@ export const UseSubmitForm = () => {
     };
 
     if (!isValidName(formData.name)) {
-      setStatus("notValidName");
+      setStatus('notValidName');
       return;
     } else if (!isValidPhoneNumber(formData.tel)) {
-      setStatus("notValidNumber");
+      setStatus('notValidNumber');
       return;
     } else if (!isValidEmail(formData.email)) {
-      setStatus("notValidEmail");
+      setStatus('notValidEmail');
       return;
     }
 
     try {
       const response = await fetch(import.meta.env.VITE_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       });
 
       if (!response.ok) {
-        setStatus("error");
+        setStatus('error');
       } else {
-        setStatus("success");
+        setStatus('success');
         resetFormData();
       }
-    } catch (err) {
-      console.log(err);
-      setStatus("error");
+    } catch {
+      setStatus('error');
     }
   };
 
