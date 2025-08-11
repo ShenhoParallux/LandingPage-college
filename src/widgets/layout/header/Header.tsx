@@ -1,4 +1,4 @@
-import "./header.scss";
+import "./Header.scss";
 import { LogoImage } from "@/shared/assets/images";
 import { BurgerButton } from "@/shared/ui";
 

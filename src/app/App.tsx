@@ -1,6 +1,8 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { LandingPage } from "@/pages";
 import { Layout } from "@/app/Layout";
+import "./App.scss";
+import "@/shared/styles/main.scss";
 
 export const App = () => {
   return (
